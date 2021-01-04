@@ -24,13 +24,7 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = {
-    DateTimePicker_4: new Date(""),
-    TextInput_5: "",
-    Switch_6: true,
-    CheckBox_7: true,
-    CheckBox_9: true
-  }
+  state = { DateTimePicker_4: new Date(""), TextInput_5: "", CheckBox_9: true }
 
   render = () => (
     <View>
@@ -49,20 +43,6 @@ export default class Blank extends React.Component {
         value={this.state.TextInput_5}
         onChangeText={nextValue => this.setState({ TextInput_5: nextValue })}
       />
-      <Switch
-        trackColor={{ false: "#C0CCDA", true: "#05121f" }}
-        style={styles.Switch_6}
-        value={this.state.Switch_6}
-        onValueChange={nextChecked => this.setState({ Switch_6: nextChecked })}
-      />
-      <CheckBox
-        title="Radio button"
-        checkedIcon="dot-circle-o"
-        uncheckedIcon="circle-o"
-        checked={this.state.CheckBox_7}
-        onPress={nextChecked => this.setState({ CheckBox_7: nextChecked })}
-      />
-      <Icon name="star" />
       <CheckBox
         title="Checkbox"
         checked={this.state.CheckBox_9}
@@ -78,8 +58,5 @@ const styles = StyleSheet.create({
   Text_3: {},
   DateTimePicker_4: {},
   TextInput_5: {},
-  Switch_6: { alignSelf: "flex-start" },
-  CheckBox_7: {},
-  Icon_8: {},
   CheckBox_9: {}
 })
