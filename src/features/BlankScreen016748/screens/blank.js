@@ -31,7 +31,7 @@ export default class Blank extends React.Component {
       <Button title="Press me!" onPress={() => alert("Pressed!")} />
       <Text>Sample text content</Text>
       <TextInput
-        placeholder="Number Input Placeholder"
+        placeholder="Number Input"
         editable={true}
         keyboardType="numeric"
         style={styles.TextInput_5}
