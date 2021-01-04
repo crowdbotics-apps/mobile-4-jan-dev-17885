@@ -24,22 +24,17 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = { DateTimePicker_4: new Date(""), TextInput_5: "", CheckBox_9: true }
+  state = { TextInput_5: "2509090", CheckBox_9: true }
 
   render = () => (
     <View>
       <Button title="Press me!" onPress={() => alert("Pressed!")} />
       <Text>Sample text content</Text>
-      <DateTimePicker
-        showIcon={false}
-        date={this.state.DateTimePicker_4}
-        onDateChange={selectedDate =>
-          this.setState({ DateTimePicker_4: selectedDate })
-        }
-      />
       <TextInput
         placeholder="Number Input Placeholder"
+        editable={false}
         keyboardType="numeric"
+        style={styles.TextInput_5}
         value={this.state.TextInput_5}
         onChangeText={nextValue => this.setState({ TextInput_5: nextValue })}
       />
@@ -56,7 +51,6 @@ const styles = StyleSheet.create({
   View_1: {},
   Button_2: {},
   Text_3: {},
-  DateTimePicker_4: {},
-  TextInput_5: {},
+  TextInput_5: { fontSize: 17, color: "#2fdd2c", fontFamily: "Roboto-Regular" },
   CheckBox_9: {}
 })
