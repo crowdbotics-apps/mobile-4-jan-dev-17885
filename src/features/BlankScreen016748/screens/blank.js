@@ -32,7 +32,7 @@ export default class Blank extends React.Component {
       <Text>Sample text content</Text>
       <TextInput
         placeholder="Number Input Placeholder"
-        editable={false}
+        editable={true}
         keyboardType="numeric"
         style={styles.TextInput_5}
         value={this.state.TextInput_5}
