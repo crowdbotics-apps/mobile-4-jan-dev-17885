@@ -29,8 +29,7 @@ export default class Blank extends React.Component {
     TextInput_5: "",
     Switch_6: true,
     CheckBox_7: true,
-    CheckBox_9: true,
-    Switch_10: true
+    CheckBox_9: true
   }
 
   render = () => (
@@ -69,12 +68,6 @@ export default class Blank extends React.Component {
         checked={this.state.CheckBox_9}
         onPress={nextChecked => this.setState({ CheckBox_9: nextChecked })}
       />
-      <Switch
-        trackColor={{ false: "#C0CCDA", true: "#0080ff" }}
-        style={styles.Switch_10}
-        value={this.state.Switch_10}
-        onValueChange={nextChecked => this.setState({ Switch_10: nextChecked })}
-      />
     </View>
   )
 }
@@ -88,6 +81,5 @@ const styles = StyleSheet.create({
   Switch_6: { alignSelf: "flex-start" },
   CheckBox_7: {},
   Icon_8: {},
-  CheckBox_9: {},
-  Switch_10: { alignSelf: "flex-start" }
+  CheckBox_9: {}
 })
